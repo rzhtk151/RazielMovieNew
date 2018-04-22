@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RazielMovie</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="title_activity_edit_or_show">ActivityEditOrShow</string>
+    <string name="title_activity_search_in_movie_api">SearchInMovieApi</string>
+    <string name="UserResurceDataMovie">user</string>
+    <string name="change_lang"> שינוי שפה</string>
+    <string name="delete_storge">מחיקת DB </string>
+    <string name="search_menu">חיפוש</string>
+    <string name="exit_menu">יציאה</string>
+    <string name="dialogDeleteMain">אתה בטוח?</string>
+    <string name="dialog_enter_new_movie">צור סרט חדש בעצמך</string>
+    <string name="dialog_search_for_new_movie">חפש סרט חדש באינטרנט</string>
+    <string name="dialog_new_movie_title">בחר אחד</string>
+    <string name="view_more">ראה עוד</string>
+    <string name="dialog_delete_movie_title">אתה בטוח שאתה רוצה למחוק את הסרט?</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+    <string name="https_problem">לא יכול להתחבר ל :  </string>
+    <string name="Problem_while_download_image">קרתה תקלה בעת הורדת התמונה</string>
+    <string name="dialog_change_language">לשנות את השפה לאנגלית?</string>
+    <string name="update_data">"עדכן נתונים"</string>
+    <string name="release_date">תאריך יציאה :</string>
+    <string name="hint_description_activity_edit">פירוט :</string>
+    <string name="hint_director_activity_edit">במאי :</string>
+    <string name="watched_checkbox">ראית?</string>
+    <string name="movie_name">שם הסרט</string>
+    <string name="date_format">DD/MM/YYYY</string>
+    <string name="description">פירוט</string>
+    <string name="watch_trailer">צפה בטריילר</string>
+    <string name="director">במאי</string>
+    <string name="add_to_watchlist">הוסף לרשימת הצפייה</string>
+    <string name="no_details">אין מידע</string>
+    <string name="year_format">YYYY</string>
+    <string name="upcoming">בקרוב</string>
+    <string name="top_rated">חובה</string>
+    <string name="now_playing">בקולנוע</string>
+    <string name="my_list">הרשימה שלי</string>
+    <string name="popular">פופולרים</string>
+    <string name="empty_text_view">מידע חסר</string>
+    <string name="connection_error">אין אינטרנט</string>
+    <string name="edit">ערוך</string>
+    <string name="delete">מחק סרט</string>
+    <string name="send_mail">סרט מומלץ בשבילך - </string>
+    <string name="select_app_to_send_mail">בחר אפליקצייה עלמנת לשלוח את הסרט</string>
+    <string name="valid_movie_error">הסרט קיים במאגר הסרטים שלך!</string>
+    <string name="watched_movies">סרטים שנצפו</string>
+    <string name="api_string_by_id_lang">he</string>
+    <string name="text_message_empty_my_list">רשימת הסרטים שלך ריקה, לחץ על כפתור ה + עלמנת להוסיף סרט חדש</string>
+    <string name="tv_empty_my_search_activity">על מנת לחפש סרט לחץ על אייקון החיפוש בחלק העליון של המסך</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="poster_image_toolbar_background_height">400dp</dimen>
+    <dimen name="overview_edit_activite_height">250dp</dimen>
+    <dimen name="act_hoz_margin">16dp</dimen>
+    <dimen name="act_ver_margin">16dp</dimen>
+    <dimen name="design_bottom_navigation_item_max_width" tools:override="true">600dp</dimen>
+    <dimen name="image_view_edit_activity_width">300dp</dimen>
+    <array name="autosize_text_sizes">
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>20sp</item>
+        <item>40sp</item>
+        <item>100sp</item>
+    </array>
+</resources>

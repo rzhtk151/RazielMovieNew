@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item
+        android:id="@+id/share_item"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="20"
+        android:title="share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/imdb_item"
+        android:icon="@mipmap/imdb_new"
+        android:orderInCategory="10"
+        android:title="imdb"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/you_tube_item"
+        android:icon="@mipmap/youtube_sociocon"
+        android:orderInCategory="0"
+        android:title="YouTube"
+        app:showAsAction="always" />
+
+
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RazielMovie</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_edit_or_show">ActivityEditOrShow</string>
+    <string name="title_activity_search_in_movie_api">SearchInMovieApi</string>
+    <string name="UserResurceDataMovie">user</string>
+    <string name="change_lang">Change lang</string>
+    <string name="delete_storge">Delete storge</string>
+    <string name="search_menu">Search</string>
+    <string name="exit_menu">Exit</string>
+    <string name="dialogDeleteMain">are you sure?</string>
+    <string name="dialog_enter_new_movie">Enter movie by yourself</string>
+    <string name="dialog_search_for_new_movie">Search for a new movie online</string>
+    <string name="dialog_new_movie_title">Choose one to continue</string>
+    <string name="view_more">View More</string>
+    <string name="dialog_delete_movie_title">You sure want to delete this movie?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="https_problem">Cannot Connect to : </string>
+    <string name="Problem_while_download_image">Problem while download the image</string>
+    <string name="dialog_change_language">Change the language to hebrew?</string>
+    <string name="update_data">"UPDATE DATA"</string>
+    <string name="release_date">Release date :</string>
+    <string name="hint_description_activity_edit">Description :</string>
+    <string name="hint_director_activity_edit">Director :</string>
+    <string name="watched_checkbox">watched?</string>
+    <string name="movie_name">Movie name</string>
+    <string name="date_format">DD/MM/YYYY</string>
+    <string name="description">Description</string>
+    <string name="watch_trailer">WATCH TRAILER</string>
+    <string name="director">Director</string>
+    <string name="add_to_watchlist">ADD TO WATCHLIST</string>
+    <string name="no_details">No details</string>
+    <string name="year_format">YYYY</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="my_list">My List</string>
+    <string name="popular">Popular</string>
+    <string name="empty_text_view">Missing data</string>
+    <string name="connection_error">No internet</string>
+    <string name="edit">Edit movie</string>
+    <string name="delete">Delete movie</string>
+    <string name="send_mail">Recommend movie just for you -</string>
+    <string name="select_app_to_send_mail">Select App to Share the movie</string>
+    <string name="valid_movie_error">Movie exists in your list!</string>
+    <string name="watched_movies">watched movies</string>
+    <string name="api_string_by_id_lang">en-US</string>
+    <string name="text_message_empty_my_list">Your movie list is empty, press the + button to add a new movie</string>
+    <string name="tv_empty_my_search_activity">To search for a movie click on the search icon at the top of the screen</string>
+
+
+
+
+</resources>

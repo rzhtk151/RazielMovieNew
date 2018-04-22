@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.raziel.razielmovie.ActivityEditOrShow"
+    tools:showIn="@layout/activity_edit_or_show">
+
+    <EditText
+        android:id="@+id/et_director"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/director"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_red_light"
+        app:layout_constraintStart_toEndOf="@+id/director_tv_static"
+        app:layout_constraintTop_toBottomOf="@+id/movie_name"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/imdb_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@mipmap/imdb"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:clickable="true"
+        android:visibility="gone"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        app:layout_constraintEnd_toStartOf="@+id/progressBarRating"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_watchlist" />
+
+
+    <Button
+        android:id="@+id/trailer_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/appBackground"
+        android:visibility="gone"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/watch_trailer"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/add_to_watchlist"
+        app:layout_constraintTop_toBottomOf="@+id/et_year" />
+
+    <Button
+        android:id="@+id/add_to_watchlist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/yellowBack"
+        android:ems="10"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/add_to_watchlist"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/trailer_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_year" />
+
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:minLines="4"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="top|left"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="10sp"
+        android:overScrollMode="always"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:textColorHint="@android:color/holo_red_light"
+
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Description_tv_static" />
+
+
+    <EditText
+        android:id="@+id/et_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/date_format"
+        android:inputType="date"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_red_light"
+        app:layout_constraintStart_toEndOf="@+id/release_tv_static"
+        app:layout_constraintTop_toBottomOf="@+id/et_description" />
+
+    <EditText
+        android:id="@+id/movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@android:color/white"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="@string/movie_name"
+        android:inputType="textImeMultiLine"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/rating_movie"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTintMode="@color/yellowLiteBack"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_year"
+        app:layout_constraintTop_toBottomOf="@+id/et_description"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/watched_btn"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="watched?"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:theme="@style/WhiteCheck"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_genre"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_genre"
+        android:layout_width="314dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableRight="@android:drawable/ic_menu_edit"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="genre"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating_movie"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/director_tv_static"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/hint_director_activity_edit"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_name" />
+
+
+    <TextView
+        android:id="@+id/Description_tv_static"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/hint_description_activity_edit"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_director" />
+
+
+    <TextView
+        android:id="@+id/release_tv_static"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/release_date"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_description" />
+
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/progressBarRating"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left|top"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:donut_background_color="@color/appBackground"
+        app:donut_finished_color="@color/yellowLiteBack"
+        app:donut_inner_bottom_text_color="@color/appBackground"
+
+        app:donut_max="10"
+        app:donut_text_color="@android:color/white"
+        app:donut_text_size="25sp"
+        app:donut_unfinished_color="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/et_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/et_director"
+        app:layout_constraintTop_toBottomOf="@+id/movie_name" />
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+<!--
+<com.google.android.youtube.player.YouTubePlayerView
+android:id="@+id/youtube_player"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginEnd="8dp"
+android:layout_marginStart="8dp"
+android:layout_marginTop="16dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/add_to_watchlist"
+tools:layout_height="350dp"
+tools:layout_width="match_parent" />-->

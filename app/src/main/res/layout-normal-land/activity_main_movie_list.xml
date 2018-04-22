@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context="com.raziel.razielmovie.MainMovieList">
+
+    <TextView
+        android:id="@+id/tv_empty_my_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/text_message_empty_my_list"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <android.support.design.widget.BottomNavigationView
+            android:background="@color/yellowLiteBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            app:itemBackground="@color/yellowLiteBack"
+            app:itemIconTint="@android:color/black"
+            app:itemTextColor="@android:color/black"
+            app:menu="@menu/top_menu"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main_movie_list" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_plus_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="normal"
+        app:borderWidth="0dp"
+        android:backgroundTint="@color/yellowLiteBack"
+        app:srcCompat="@drawable/ic_add_black_48dp" />
+
+</android.support.design.widget.CoordinatorLayout>
